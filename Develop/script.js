@@ -1,27 +1,40 @@
 // Defining Variables
-var symbol= ['!','?','@'];//"!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
-var upper= "ABCDEFGHIJKLLMNOPQRSTUVWXYZ";
-var lower= ['a','b','c'];//"abcdefghijklmnopqrstuvwxyz";
-var numeric= [1,2,3,4];//"1234567890";
-
+var symbol= ['!','?','@','#','$','%','&','+','-','.',':','=','^','~'];
+var upper= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var lower= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var numeric= [1,2,3,4,5,6,7,8,9,0];
 // User Prompts
 var symbolGen;
+var upperGen;
+var lowerGen;
+var numericGen;
 var userLength;
-
-var upperGen = confirm ("Do you want your password to contain uppercase letters?");
-var lowerGen = confirm ("Do you want your password to contain lowercase letters?");
-var numericGen = confirm ("Do you want your password to contain numbers?");
 var userschoice=[];
 var finalpw;
 
 // define variable for generated password
-//generate  return fx and it return a password
+//generate return function and it returns a password
 function generatePassword(){
+}
   //ask for length, prompt returns out a string, you will need to convert this into a number
   //parseInt();
+  var passwordLength = parseInt(prompt("Please select a password length between 8 and 128 characters."));
+}
 
-  //ask user questions
+if (!enter) {
+  alert("This needs a value");} 
+  else if (enter < 8 || enter > 128) {
+  enter = parseInt(prompt("Criteria Alert! You must choose a number between 8 and 128"));} 
+  
+  else {
+  // ask user questions
   symbolGen = confirm ("Do you want your password to contain special characters?");
+  upperGen = confirm ("Do you want your password to contain uppercase letters?");
+  lowerGen = confirm ("Do you want your password to contain lowercase letters?");
+  numericGen = confirm ("Do you want your password to contain numbers?");
+};
+
+
   //if symbolGen is true, what do we do?
     //store it in userschoice.
      //decide how the possible data is stored (userschoice: [],{}=>
