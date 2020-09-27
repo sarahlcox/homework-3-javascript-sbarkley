@@ -15,17 +15,16 @@ var finalpw;
 // define variable for generated password
 //generate return function and it returns a password
 function generatePassword(){
-}
   //ask for length, prompt returns out a string, you will need to convert this into a number
-  //parseInt();
-  var passwordLength = parseInt(prompt("Please select a password length between 8 and 128 characters."));
-}
-
-if (!enter) {
-  alert("This needs a value");} 
-  else if (enter < 8 || enter > 128) {
-  enter = parseInt(prompt("Criteria Alert! You must choose a number between 8 and 128"));} 
+  userLength = parseInt(prompt("How long would you like your password to be? (choose between 8-128 characters)"));
   
+if (!userLength) {
+  alert("This needs a value");} 
+  else if (userLength < 8 || userLength > 128) {
+  userLength = parseInt(prompt("Criteria Alert! You must choose a number between 8 and 128"));} 
+  else if (userLength < 8 || userLength > 128) {
+  userLength = parseInt(prompt("You must choose between 8 and 128"));
+  }
   else {
   // ask user questions
   symbolGen = confirm ("Do you want your password to contain special characters?");
