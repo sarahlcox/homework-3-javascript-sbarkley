@@ -1,1 +1,1 @@
-# homework-3-javascript-sbarkley
+I had an error in the code, and ended up starting over on the due date of this assignment. I understand that it is not complete, but I went back to my pseudocode to start building it back in to make more sense of it. I am going to keep working on this to resubmit this homework in hopes I am able to understand why my code wasn't working a little more clearly. 
